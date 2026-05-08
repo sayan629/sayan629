@@ -189,9 +189,9 @@
 
 <br/>
 
-<!-- Streak — using alternative provider for live accuracy -->
+<!-- Streak — live real-time accurate provider -->
 <div align="center">
-<img src="https://streak-stats.demolab.com/?user=sayan629&theme=github-dark-blue&hide_border=true&border_radius=15&background=0D1117&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF&sideLabels=FFFFFF&dates=888888&stroke=00D9FF" width="70%"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=sayan629&theme=tokyonight-duo&hide_border=true&border_radius=15&background=0D1117&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF&sideLabels=FFFFFF&dates=888888&stroke=00D9FF&date_format=M%20j%5B%2C%20Y%5D" width="70%"/>
 </div>
 
 <br/>
