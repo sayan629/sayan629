@@ -147,7 +147,6 @@
 &nbsp;
 <img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="185" alt="Machine Learning"/>
 &nbsp;
-<img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="210" alt="AI Future"/>
 
 </div>
 
