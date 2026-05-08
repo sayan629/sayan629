@@ -141,11 +141,13 @@
 
 <div align="center">
 
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDd3NjFtY2RqZWN4bWlrMnd3NTFxemppMHFsM2JtaGFsYmY1ZXhwMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LaVp0AyqR5bGsC5Cbm/giphy.gif" width="260" alt="AI Brain"/>
-&nbsp;&nbsp;
-<img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="260" alt="Neural Network"/>
-&nbsp;&nbsp;
-<img src="https://media.giphy.com/media/3oKIPnAFLScpFKwEOc/giphy.gif" width="200" alt="Data Science"/>
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDd3NjFtY2RqZWN4bWlrMnd3NTFxemppMHFsM2JtaGFsYmY1ZXhwMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LaVp0AyqR5bGsC5Cbm/giphy.gif" width="210" alt="AI Brain"/>
+&nbsp;
+<img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="210" alt="Neural Network"/>
+&nbsp;
+<img src="https://media.giphy.com/media/3oKIPnAFLScpFKwEOc/giphy.gif" width="170" alt="Data Science"/>
+&nbsp;
+<img src="https://media.giphy.com/media/RDZo7znAdn2u7sAcWH/giphy.gif" width="210" alt="AI Robot ML"/>
 
 </div>
 
