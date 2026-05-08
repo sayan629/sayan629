@@ -10,7 +10,7 @@
 <div align="center">
 
 <!-- Animated Typing -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=28&duration=3000&pause=800&color=00D9FF&background=0D0D0D00&center=true&vCenter=true&multiline=false&width=700&height=60&lines=🤖+Building+Intelligent+Systems;🧠+Deep+Learning+%7C+Neural+Networks;🐍+Python+Wizard+in+the+Making;🚀+Turning+Data+into+Decisions;💡+From+India+to+the+AI+World!)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=28&duration=3000&pause=800&color=00D9FF&center=true&vCenter=true&width=700&height=60&lines=🤖+Building+Intelligent+Systems;🧠+Deep+Learning+%7C+Neural+Networks;🐍+Python+Wizard+in+the+Making;🚀+Turning+Data+into+Decisions;💡+From+India+to+the+AI+World!)](https://git.io/typing-svg)
 
 </div>
 
@@ -50,6 +50,7 @@
 ║  ▸ Mastering Python 🐍           ║
 ║  ▸ Cracking Deep Learning 🧠     ║
 ║  ▸ Building ML Models 🤖         ║
+║  ▸ Web Dev with PHP/JS 🌐        ║
 ╠══════════════════════════════════╣
 ║  SPECIAL SKILL:                  ║
 ║  ▸ Being Funny (self-rated) 😄   ║
@@ -82,17 +83,24 @@
 <div align="center">
 
 ### ⚡ Core Stack
-<img src="https://skillicons.dev/icons?i=python,java,tensorflow,pytorch&theme=dark&perline=4" height="80"/>
+
+<img src="https://skillicons.dev/icons?i=python,java,php,html,css,js&theme=dark&perline=6" height="75"/>
 
 <br/><br/>
 
 ### 🧰 AI / ML Toolkit
-<img src="https://skillicons.dev/icons?i=sklearn,numpy,pandas,matplotlib&theme=dark&perline=4" height="80"/>
+
+<img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn,opencv&theme=dark&perline=4" height="75"/>
+
+<br/>
+
+<img src="https://skillicons.dev/icons?i=numpy,pandas,matplotlib,fastapi&theme=dark&perline=4" height="75"/>
 
 <br/><br/>
 
 ### 🛠 Dev Environment
-<img src="https://skillicons.dev/icons?i=git,github,vscode,linux&theme=dark&perline=4" height="80"/>
+
+<img src="https://skillicons.dev/icons?i=git,github,vscode,linux,jupyter,colab&theme=dark&perline=6" height="75"/>
 
 </div>
 
@@ -100,13 +108,23 @@
 
 <div align="center">
 
+<!-- Core Web + Languages -->
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=FFD43B)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+<!-- AI / ML -->
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![Scikit Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=4DABCF)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Colab](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=black)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
@@ -123,9 +141,11 @@
 
 <div align="center">
 
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDd3NjFtY2RqZWN4bWlrMnd3NTFxemppMHFsM2JtaGFsYmY1ZXhwMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LaVp0AyqR5bGsC5Cbm/giphy.gif" width="280" alt="AI Brain"/>
-&nbsp;&nbsp;&nbsp;
-<img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="280" alt="Neural Network"/>
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDd3NjFtY2RqZWN4bWlrMnd3NTFxemppMHFsM2JtaGFsYmY1ZXhwMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LaVp0AyqR5bGsC5Cbm/giphy.gif" width="260" alt="AI Brain"/>
+&nbsp;&nbsp;
+<img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="260" alt="Neural Network"/>
+&nbsp;&nbsp;
+<img src="https://media.giphy.com/media/3oKIPnAFLScpFKwEOc/giphy.gif" width="200" alt="Data Science"/>
 
 </div>
 
@@ -133,11 +153,11 @@
 
 <div align="center">
 
-| 🧠 Neural Networks | 📊 Data Analysis | 🤖 Machine Learning | 🔬 Research |
+| 🧠 Neural Networks | 📊 Data Analysis | 🤖 Machine Learning | 🌐 Web + AI |
 |:---:|:---:|:---:|:---:|
-| Deep Learning | EDA & Visualization | Supervised Models | AI Papers |
-| CNNs & RNNs | Statistical Analysis | Unsupervised Models | Experimenting |
-| Transformers | Feature Engineering | Model Evaluation | Building |
+| Deep Learning | EDA & Visualization | Supervised Models | PHP Backend |
+| CNNs & RNNs | Statistical Analysis | Unsupervised Models | JS Frontend |
+| Transformers | Feature Engineering | Model Evaluation | API Building |
 
 </div>
 
@@ -149,28 +169,32 @@
 
 <br/>
 
+<!-- Activity Graph -->
 <div align="center">
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=sayan629&bg_color=0D1117&color=00D9FF&line=00D9FF&point=FFFFFF&area=true&area_color=00D9FF&hide_border=true&radius=8" width="96%"/>
 </div>
 
 <br/>
 
+<!-- Stats Row -->
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=sayan629&show_icons=true&theme=github_dark&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF&text_color=FFFFFF&ring_color=00D9FF" height="195"/>
+<img src="https://github-readme-stats.vercel.app/api?username=sayan629&show_icons=true&theme=github_dark&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF&text_color=FFFFFF&ring_color=00D9FF&count_private=true&include_all_commits=true" height="195"/>
 &nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs?username=sayan629&layout=compact&theme=github_dark&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF" height="195"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs?username=sayan629&layout=compact&theme=github_dark&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF&langs_count=8" height="195"/>
 
 </div>
 
 <br/>
 
+<!-- Streak — using alternative provider for live accuracy -->
 <div align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=sayan629&theme=github-dark-blue&hide_border=true&border_radius=15&background=0D1117&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF&sideLabels=FFFFFF" width="70%"/>
+<img src="https://streak-stats.demolab.com/?user=sayan629&theme=github-dark-blue&hide_border=true&border_radius=15&background=0D1117&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF&sideLabels=FFFFFF&dates=888888&stroke=00D9FF" width="70%"/>
 </div>
 
 <br/>
 
+<!-- Trophies -->
 <div align="center">
 <img src="https://github-profile-trophy.vercel.app/?username=sayan629&theme=onestar&no-frame=true&no-bg=false&column=7&margin-w=5" width="96%"/>
 </div>
@@ -241,7 +265,7 @@
 
 <br/>
 
-<!-- 3D Footer Wave -->
+<!-- 3D Footer -->
 <img src="https://capsule-render.vercel.app/api?type=waving&height=200&text=Thanks%20for%20visiting!%20⭐&fontSize=35&color=0:0D1117,50:1a1a2e,100:16213e&fontColor=00D9FF&animation=twinkling&fontAlignY=65" width="100%"/>
 
 <div align="center">
