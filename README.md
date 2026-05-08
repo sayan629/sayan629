@@ -1,62 +1,71 @@
-<!-- Header Banner -->
 <div align="center">
-  <img src="https://github.com/sayan629/sayan629/blob/main/banner.png.jpg" alt="Banner" width="100%" />
+
+<!-- 3D Venom Header -->
+<img src="https://capsule-render.vercel.app/api?type=venom&height=300&text=SAYAN%20PAL&fontSize=90&color=0:0D0D0D,50:1a1a2e,100:16213e&fontColor=00D9FF&stroke=00D9FF&strokeWidth=2&animation=fadeIn&desc=AI%20•%20Deep%20Learning%20•%20Data%20Innovation&descSize=22&descAlignY=75&descAlign=50" width="100%"/>
+
+</div>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%">
+
+<div align="center">
+
+<!-- Animated Typing -->
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=28&duration=3000&pause=800&color=00D9FF&background=0D0D0D00&center=true&vCenter=true&multiline=false&width=700&height=60&lines=🤖+Building+Intelligent+Systems;🧠+Deep+Learning+%7C+Neural+Networks;🐍+Python+Wizard+in+the+Making;🚀+Turning+Data+into+Decisions;💡+From+India+to+the+AI+World!)](https://git.io/typing-svg)
+
 </div>
 
 <br/>
 
-<!-- Animated Typing Header -->
+<!-- Badge Row -->
 <div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&pause=1000&color=6C63FF&center=true&vCenter=true&width=600&lines=Hi+there%2C+I'm+Sayan+Pal+%F0%9F%91%8B;AI+%26+Deep+Learning+Enthusiast;Python+%7C+ML+%7C+Data+Innovation;Welcome+to+my+GitHub+Profile!" alt="Typing SVG" />
-  </a>
+
+![Profile Views](https://komarev.com/ghpvc/?username=sayan629&style=for-the-badge&color=0D1117&labelColor=00D9FF&label=👁️+PROFILE+VIEWS)
+[![Twitter](https://img.shields.io/twitter/follow/@imsayanp?style=for-the-badge&logo=twitter&logoColor=white&color=0D1117&labelColor=1DA1F2&label=FOLLOW)](https://twitter.com/@imsayanp)
+[![GitHub](https://img.shields.io/github/followers/sayan629?style=for-the-badge&logo=github&logoColor=white&color=0D1117&labelColor=6e40c9&label=FOLLOWERS)](https://github.com/sayan629)
+
 </div>
 
 <br/>
 
-<!-- Profile Views & Social Badges -->
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=sayan629&label=Profile+Views&color=6C63FF&style=for-the-badge" alt="Profile Views" />
-  &nbsp;
-  <a href="https://twitter.com/@imsayanp">
-    <img src="https://img.shields.io/twitter/follow/@imsayanp?logo=twitter&style=for-the-badge&color=1DA1F2" alt="Twitter Follow" />
-  </a>
-  &nbsp;
-  <img src="https://img.shields.io/github/followers/sayan629?label=Followers&style=for-the-badge&color=6C63FF" alt="GitHub Followers" />
-</div>
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%">
+
+## <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="45"> &nbsp;`whoami`
 
 <br/>
 
----
-
-<!-- About Me Section -->
-<table align="center" width="100%">
+<table>
 <tr>
-<td valign="top" width="55%">
+<td width="50%" valign="top">
 
-## 🚀 About Me
-
-```python
-class SayanPal:
-    name       = "Sayan Pal"
-    location   = "India 🇮🇳"
-    role       = "AI & ML Enthusiast"
-    learning   = ["Python", "AI", "Machine Learning"]
-    hobbies    = ["Coding", "Exploring AI", "Being Funny 😄"]
-    email      = "sayanpal771@gmail.com"
-    
-    def say_hi(self):
-        print("Thanks for visiting my profile!")
-        print("Let's build something amazing together! 🤝")
-
-me = SayanPal()
-me.say_hi()
+```yaml
+╔══════════════════════════════════╗
+║        DEVELOPER PROFILE         ║
+╠══════════════════════════════════╣
+║  Name    : Sayan Pal             ║
+║  Origin  : India 🇮🇳             ║
+║  Role    : AI/ML Enthusiast      ║
+║  Status  : Leveling Up 📈        ║
+╠══════════════════════════════════╣
+║  CURRENT QUESTS:                 ║
+║  ▸ Mastering Python 🐍           ║
+║  ▸ Cracking Deep Learning 🧠     ║
+║  ▸ Building ML Models 🤖         ║
+╠══════════════════════════════════╣
+║  SPECIAL SKILL:                  ║
+║  ▸ Being Funny (self-rated) 😄   ║
+╠══════════════════════════════════╣
+║  MAIL: sayanpal771@gmail.com     ║
+╚══════════════════════════════════╝
 ```
 
 </td>
-<td valign="top" width="45%">
+<td width="50%" valign="top" align="center">
 
-<img src="https://user-images.githubusercontent.com/55389276/140866485-8fb1c876-9a8f-4d6a-98dc-08c4981eaf70.gif" width="100%" alt="Coding GIF"/>
+<img src="https://user-images.githubusercontent.com/55389276/140866485-8fb1c876-9a8f-4d6a-98dc-08c4981eaf70.gif" width="95%"/>
+
+<br/><br/>
+
+<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="80%" alt="Coding vibes"/>
 
 </td>
 </tr>
@@ -64,143 +73,181 @@ me.say_hi()
 
 <br/>
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%">
 
-<!-- Current Focus -->
-## 🌱 What I'm Up To
+## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="40"> &nbsp; Arsenal
+
+<br/>
 
 <div align="center">
 
-| 🔭 Currently Learning | 💬 Ask Me About | 📫 Reach Me At | ⚡ Fun Fact |
+### ⚡ Core Stack
+<img src="https://skillicons.dev/icons?i=python,java,tensorflow,pytorch&theme=dark&perline=4" height="80"/>
+
+<br/><br/>
+
+### 🧰 AI / ML Toolkit
+<img src="https://skillicons.dev/icons?i=sklearn,numpy,pandas,matplotlib&theme=dark&perline=4" height="80"/>
+
+<br/><br/>
+
+### 🛠 Dev Environment
+<img src="https://skillicons.dev/icons?i=git,github,vscode,linux&theme=dark&perline=4" height="80"/>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=FFD43B)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=4DABCF)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![Colab](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
+</div>
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%">
+
+## <img src="https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif" width="40"> &nbsp; AI × Deep Learning Universe
+
+<br/>
+
+<div align="center">
+
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDd3NjFtY2RqZWN4bWlrMnd3NTFxemppMHFsM2JtaGFsYmY1ZXhwMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LaVp0AyqR5bGsC5Cbm/giphy.gif" width="280" alt="AI Brain"/>
+&nbsp;&nbsp;&nbsp;
+<img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="280" alt="Neural Network"/>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+| 🧠 Neural Networks | 📊 Data Analysis | 🤖 Machine Learning | 🔬 Research |
 |:---:|:---:|:---:|:---:|
-| Python, AI & ML | AI, Deep Learning, Data | sayanpal771@gmail.com | I think I'm funny 😄 |
+| Deep Learning | EDA & Visualization | Supervised Models | AI Papers |
+| CNNs & RNNs | Statistical Analysis | Unsupervised Models | Experimenting |
+| Transformers | Feature Engineering | Model Evaluation | Building |
 
 </div>
 
 <br/>
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%">
 
-<!-- Skills Section -->
-## 🛠️ Languages & Tools
-
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=python,java,tensorflow,pytorch,sklearn,numpy,pandas,git,github,vscode&perline=5" alt="Skills" />
-</div>
+## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="40"> &nbsp; GitHub Command Center
 
 <br/>
 
 <div align="center">
-
-<!-- Python -->
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-<!-- Java -->
-<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
-<!-- TensorFlow -->
-<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
-<!-- PyTorch -->
-<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
-<!-- Scikit Learn -->
-<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white"/>
-<!-- NumPy -->
-<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
-<!-- Pandas -->
-<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
-<!-- Git -->
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-<!-- GitHub -->
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-<!-- VS Code -->
-<img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white"/>
-
-</div>
-
-<br/>
-
----
-
-<!-- AI/ML Focus Banner -->
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=sayan629&theme=tokyo-night&hide_border=true&area=true" width="95%" alt="Activity Graph"/>
-</div>
-
-<br/>
-
----
-
-<!-- GitHub Stats -->
-## 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sayan629&show_icons=true&locale=en&theme=tokyonight&hide_border=true&border_radius=10" alt="GitHub Stats" height="180"/>
-  &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=sayan629&show_icons=true&locale=en&layout=compact&theme=tokyonight&hide_border=true&border_radius=10" alt="Top Languages" height="180"/>
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sayan629&theme=tokyonight&hide_border=true&border_radius=10" alt="GitHub Streak" width="70%"/>
-</div>
-
-<br/>
-
----
-
-<!-- Trophies -->
-## 🏆 GitHub Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=sayan629&theme=tokyonight&no-frame=true&no-bg=false&margin-w=6&column=6" alt="GitHub Trophies" width="95%"/>
-</div>
-
-<br/>
-
----
-
-<!-- AI Themed Section -->
-## 🤖 My AI & ML Journey
-
-<div align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDd3NjFtY2RqZWN4bWlrMnd3NTFxemppMHFsM2JtaGFsYmY1ZXhwMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LaVp0AyqR5bGsC5Cbm/giphy.gif" width="300" alt="AI GIF"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=sayan629&bg_color=0D1117&color=00D9FF&line=00D9FF&point=FFFFFF&area=true&area_color=00D9FF&hide_border=true&radius=8" width="96%"/>
 </div>
 
 <br/>
 
 <div align="center">
 
-🧠 **Exploring** Neural Networks & Deep Learning  
-📊 **Building** Data Pipelines & ML Models  
-🌐 **Learning** Modern AI Frameworks  
-🚀 **Goal:** Contribute to cutting-edge AI Innovation  
+<img src="https://github-readme-stats.vercel.app/api?username=sayan629&show_icons=true&theme=github_dark&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF&text_color=FFFFFF&ring_color=00D9FF" height="195"/>
+&nbsp;
+<img src="https://github-readme-stats.vercel.app/api/top-langs?username=sayan629&layout=compact&theme=github_dark&hide_border=true&border_radius=15&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF" height="195"/>
 
 </div>
 
 <br/>
 
----
+<div align="center">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=sayan629&theme=github-dark-blue&hide_border=true&border_radius=15&background=0D1117&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF&sideLabels=FFFFFF" width="70%"/>
+</div>
 
-<!-- Connect Section -->
-## 🤝 Connect With Me
+<br/>
+
+<div align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=sayan629&theme=onestar&no-frame=true&no-bg=false&column=7&margin-w=5" width="96%"/>
+</div>
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%">
+
+## 🐍 &nbsp; Contribution Snake
+
+<br/>
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg"/>
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" width="100%"/>
+</picture>
+</div>
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%">
+
+## 💬 &nbsp; Dev Quote of the Day
+
+<br/>
 
 <div align="center">
 
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/@imsayanp)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sayanpal04)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/_sayan_003._)
-[![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sayanpal771@gmail.com)
+![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&border=true)
 
 </div>
 
 <br/>
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%">
 
-<!-- Footer -->
+## <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="40"> &nbsp; Let's Connect
+
+<br/>
+
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=6C63FF&height=100&section=footer&text=Thanks+for+visiting!&fontSize=20&fontColor=white&animation=twinkling" width="100%"/>
+
+<a href="https://twitter.com/@imsayanp">
+  <img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" height="40"/>
+</a>
+&nbsp;
+<a href="https://linkedin.com/in/sayanpal04">
+  <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" height="40"/>
+</a>
+&nbsp;
+<a href="https://instagram.com/_sayan_003._">
+  <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" height="40"/>
+</a>
+&nbsp;
+<a href="mailto:sayanpal771@gmail.com">
+  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" height="40"/>
+</a>
+
 </div>
 
+<br/>
+
 <div align="center">
-  <i>⭐️ From <a href="https://github.com/sayan629">sayan629</a> — Let's connect and build something amazing!</i>
+  <img src="https://media.giphy.com/media/jpVnC65DmYeyRL4LHS/giphy.gif" width="18%"/>
+</div>
+
+<br/>
+
+<!-- 3D Footer Wave -->
+<img src="https://capsule-render.vercel.app/api?type=waving&height=200&text=Thanks%20for%20visiting!%20⭐&fontSize=35&color=0:0D1117,50:1a1a2e,100:16213e&fontColor=00D9FF&animation=twinkling&fontAlignY=65" width="100%"/>
+
+<div align="center">
+
+### ✨ *"Every expert was once a beginner. Keep learning, keep building."* ✨
+
+**Made with ❤️ & ☕ by [Sayan Pal](https://github.com/sayan629)**
+
 </div>
