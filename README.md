@@ -145,9 +145,9 @@
 &nbsp;
 <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="210" alt="Neural Network"/>
 &nbsp;
-<img src="https://media.giphy.com/media/3oKIPnAFLScpFKwEOc/giphy.gif" width="170" alt="Data Science"/>
+<img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="185" alt="Machine Learning"/>
 &nbsp;
-<img src="https://media.giphy.com/media/RDZo7znAdn2u7sAcWH/giphy.gif" width="210" alt="AI Robot ML"/>
+<img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="210" alt="AI Future"/>
 
 </div>
 
