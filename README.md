@@ -129,28 +129,6 @@ print(f"Status: {me.status}")
 
 <br/>
 
-## 🚀 Featured Projects
-
-<div align="center">
-
-<a href="https://github.com/sayan629/REPLACE-REPO-1">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=sayan629&repo=REPLACE-REPO-1&theme=radical&hide_border=true&bg_color=1a0533&title_color=ff2fb0&text_color=ffffff&icon_color=ff2fb0"/>
-</a>
-&nbsp;
-<a href="https://github.com/sayan629/REPLACE-REPO-2">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=sayan629&repo=REPLACE-REPO-2&theme=radical&hide_border=true&bg_color=1a0533&title_color=ff2fb0&text_color=ffffff&icon_color=ff2fb0"/>
-</a>
-
-</div>
-
-<p align="center"><sub>Swap <code>REPLACE-REPO-1</code> / <code>REPLACE-REPO-2</code> for your real repo names — tell me which ones and I'll drop them in.</sub></p>
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:1a0533,100:ff2fb0" width="100%">
-
-<br/>
-
 
 ## 📊 GitHub Metrics
 
