@@ -151,37 +151,16 @@ print(f"Status: {me.status}")
 
 <br/>
 
+
 ## 📊 GitHub Metrics
 
 <div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=sayan629&bg_color=1a0533&color=ff2fb0&line=ff2fb0&point=ffffff&area=true&area_color=ff2fb0&hide_border=true&radius=8" width="96%"/>
-</div>
-
-<br/>
-
-<div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=sayan629&show_icons=true&theme=radical&hide_border=true&border_radius=15&bg_color=1a0533&title_color=ff2fb0&icon_color=ff2fb0&text_color=ffffff&ring_color=ff2fb0&count_private=true&include_all_commits=true" height="195"/>
-&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sayan629&layout=donut&theme=radical&hide_border=true&border_radius=15&bg_color=1a0533&title_color=ff2fb0&text_color=ffffff&langs_count=8" height="195"/>
-</div>
-
-<br/>
-
-<div align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=sayan629&theme=radical&hide_border=true&border_radius=15&background=1a0533&ring=ff2fb0&fire=ff6b6b&currStreakLabel=ff2fb0&sideLabels=ffffff&dates=888888&stroke=ff2fb0" width="70%"/>
-</div>
-
-<br/>
-
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=sayan629&theme=radical&no-frame=true&column=7&margin-w=5" width="96%"/>
+<img src="https://streak-stats.demolab.com/?user=sayan629&theme=radical&hide_border=true&border_radius=15&background=1a0533&ring=ff2fb0&fire=ff6b6b&currStreakLabel=ff2fb0&sideLabels=ffffff&dates=888888&stroke=ff2fb0" width="70%"/>
 </div>
 
 <br/>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:1a0533,100:ff2fb0" width="100%">
-
-<br/>
 
 ## 🐍 Contribution Snake
 
