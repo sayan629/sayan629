@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- 3D Venom Header -->
-<img src="https://capsule-render.vercel.app/api?type=venom&height=300&text=SAYAN%20PAL&fontSize=90&color=0:0D0D0D,50:1a1a2e,100:16213e&fontColor=00D9FF&stroke=00D9FF&strokeWidth=2&animation=fadeIn&desc=AI%20•%20Deep%20Learning%20•%20Data%20Innovation&descSize=22&descAlignY=75&descAlign=50" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=320&text=SAYAN%20PAL&fontSize=90&color=0:0D0D0D,50:1a1a2e,100:16213e&fontColor=00D9FF&stroke=00D9FF&strokeWidth=2&animation=fadeIn&desc=AI%20•%20Deep%20Learning%20•%20Data%20Innovation&descSize=22&descAlignY=75&descAlign=50" width="100%"/>
 
 </div>
 
@@ -10,7 +10,12 @@
 <div align="center">
 
 <!-- Animated Typing -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=28&duration=3000&pause=800&color=00D9FF&center=true&vCenter=true&width=700&height=60&lines=🤖+Building+Intelligent+Systems;🧠+Deep+Learning+%7C+Neural+Networks;🐍+Python+Wizard+in+the+Making;🚀+Turning+Data+into+Decisions;💡+From+India+to+the+AI+World!)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=26&duration=2600&pause=700&color=00D9FF&center=true&vCenter=true&width=750&height=100&lines=%F0%9F%A4%96+Building+Intelligent+Systems;%F0%9F%A7%A0+Deep+Learning+%7C+Neural+Networks;%F0%9F%90%8D+Python+Wizard+in+the+Making;%F0%9F%9A%80+Turning+Data+into+Decisions;%F0%9F%92%A1+From+India+to+the+AI+World%21;%E2%9A%A1+Fueled+by+Curiosity+%26+Coffee)](https://git.io/typing-svg)
+
+<br/>
+
+<!-- Hero GIF -->
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/gifs/robot.gif" width="130"/>
 
 </div>
 
@@ -22,6 +27,7 @@
 ![Profile Views](https://komarev.com/ghpvc/?username=sayan629&style=for-the-badge&color=0D1117&labelColor=00D9FF&label=👁️+PROFILE+VIEWS)
 [![Twitter](https://img.shields.io/twitter/follow/@imsayanp?style=for-the-badge&logo=twitter&logoColor=white&color=0D1117&labelColor=1DA1F2&label=FOLLOW)](https://twitter.com/@imsayanp)
 [![GitHub](https://img.shields.io/github/followers/sayan629?style=for-the-badge&logo=github&logoColor=white&color=0D1117&labelColor=6e40c9&label=FOLLOWERS)](https://github.com/sayan629)
+![Status](https://img.shields.io/badge/STATUS-ONLINE-00D9FF?style=for-the-badge&labelColor=0D1117)
 
 </div>
 
@@ -58,6 +64,14 @@
 ║  MAIL: sayanpal771@gmail.com     ║
 ╚══════════════════════════════════╝
 ```
+
+<br/>
+
+<!-- XP-style progress bars -->
+**🐍 Python** &nbsp;`████████████████░░░░`&nbsp; 80%
+**🧠 Deep Learning** &nbsp;`████████████░░░░░░░░`&nbsp; 60%
+**🌐 Web Dev** &nbsp;`██████████████░░░░░░`&nbsp; 70%
+**☕ Sleep Deprivation** &nbsp;`████████████████████`&nbsp; 100%
 
 </td>
 <td width="50%" valign="top" align="center">
@@ -161,6 +175,28 @@
 | Transformers | Feature Engineering | Model Evaluation | API Building |
 
 </div>
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" width="100%">
+
+## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="40"> &nbsp; Featured Projects
+
+<br/>
+
+<div align="center">
+
+<a href="https://github.com/sayan629?tab=repositories">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=sayan629&repo=REPLACE-WITH-REPO-1&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF&icon_color=00D9FF"/>
+</a>
+&nbsp;
+<a href="https://github.com/sayan629?tab=repositories">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=sayan629&repo=REPLACE-WITH-REPO-2&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF&icon_color=00D9FF"/>
+</a>
+
+</div>
+
+<p align="center"><sub>💡 Swap <code>REPLACE-WITH-REPO-1/2</code> with your actual repo names to pin your best work here.</sub></p>
 
 <br/>
 
