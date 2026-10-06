@@ -1,250 +1,605 @@
-from pathlib import Path
+from PIL import Image, ImageEnhance, ImageOps, ImageFilter
+import html
+import os
+import sys
 
-from PIL import Image, ImageOps, ImageEnhance
+HERE = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.dirname(HERE)
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+# Your processed portrait
+SRC = (
+    sys.argv[1]
+    if len(sys.argv) > 1
+    else os.path.join(BASE_DIR, "data", "source-prepped.png")
+)
 
-INPUT_FILE = BASE_DIR / "data" / "source-prepped.png"
-OUTPUT_FILE = BASE_DIR / "avi-ascii.svg"
+OUT = (
+    sys.argv[2]
+    if len(sys.argv) > 2
+    else os.path.join(BASE_DIR, "avi-ascii.svg")
+)
 
-RAMP = " .:-=+*#%@"
+# ============================================================
+# ASCII DETAIL
+# ============================================================
 
-# KEEPING YOUR EXISTING SIZE
-TARGET_WIDTH = 110
+COLS = int(os.environ.get("COLS", 180))
 
-CHAR_WIDTH = 7
-CHAR_HEIGHT = 14
+ART_W_TARGET = 800
 
-FONT_SIZE = 10
+CELL_W = ART_W_TARGET / COLS
+CELL_H = CELL_W * 15 / 8
 
-# Dark terminal theme
-TEXT_COLOR = "#e6edf3"
-BACKGROUND = "#0d1117"
+ROWS = round(
+    COLS * 8 / 15
+)
+
+RAMP = " .`:-=+*cs#%@"
+
+# ============================================================
+# IMAGE TUNING
+# ============================================================
+
+CONTRAST = 1.05
+BRIGHTNESS = 1.0
+
+GAMMA = 1.18
+
+SHARPEN = False
+
+WHITE_FLOOR = 0.80
+
+# ============================================================
+# TERMINAL DESIGN
+# ============================================================
+
+PAD = 20
+
+TITLEBAR_H = 30
+STATUS_H = 30
+
+ART_W = COLS * CELL_W
+ART_H = ROWS * CELL_H
+
+CANVAS_W = ART_W + PAD * 2
+CANVAS_H = TITLEBAR_H + ART_H + STATUS_H + PAD
+
+BG = "#0d1117"
+BG2 = "#111722"
+
+FRAME = "#30363d"
+
+TITLE_TEXT = "#7d8590"
+
+INK = "#c9d1d9"
+
+CURSOR = "#c9d1d9"
+
+# ============================================================
+# SLOW ANIMATION
+# ============================================================
+
+ROW_DUR = 5.8 / ROWS
+
+STAGGER = ROW_DUR
+
+# ============================================================
+# LOAD YOUR PHOTO
+# ============================================================
+
+print()
+print("======================================")
+print(" CREATING ASCII PORTRAIT")
+print("======================================")
+print()
+
+print("Source :", SRC)
+print("Output :", OUT)
+print()
 
 
-if not INPUT_FILE.exists():
+if not os.path.exists(SRC):
     raise FileNotFoundError(
-        f"Input image not found: {INPUT_FILE}"
+        f"Photo not found: {SRC}"
     )
 
 
-image = Image.open(INPUT_FILE).convert("L")
-
-image = ImageOps.autocontrast(
-    image,
-    cutoff=2
-)
-
-contrast = ImageEnhance.Contrast(image)
-image = contrast.enhance(2.2)
+im = Image.open(SRC).convert("L")
 
 
-width, height = image.size
+# ============================================================
+# IMAGE PROCESSING
+# ============================================================
 
-aspect_ratio = height / width
+if SHARPEN:
 
-target_height = max(
-    1,
-    round(
-        TARGET_WIDTH
-        * aspect_ratio
-        * CHAR_WIDTH
-        / CHAR_HEIGHT
+    im = im.filter(
+        ImageFilter.UnsharpMask(
+            radius=2,
+            percent=140,
+            threshold=2
+        )
     )
-)
 
 
-image = image.resize(
-    (TARGET_WIDTH, target_height),
+im = ImageEnhance.Brightness(
+    im
+).enhance(BRIGHTNESS)
+
+
+im = ImageEnhance.Contrast(
+    im
+).enhance(CONTRAST)
+
+
+# ============================================================
+# RESIZE TO ASCII GRID
+# ============================================================
+
+im = im.resize(
+    (
+        COLS,
+        ROWS
+    ),
     Image.Resampling.LANCZOS
 )
 
 
-pixels = list(image.getdata())
-
-processed_pixels = []
-
-for value in pixels:
-
-    if value > 225:
-        value = 255
-
-    elif value < 35:
-        value = 0
-
-    processed_pixels.append(value)
+px = im.load()
 
 
-rows = []
+# ============================================================
+# STATIC PREVIEW OPTION
+# ============================================================
 
-for y in range(target_height):
+STATIC = bool(
+    os.environ.get("STATIC")
+)
 
-    row = []
 
-    for x in range(TARGET_WIDTH):
+# ============================================================
+# CONVERT PHOTO → ASCII
+# ============================================================
 
-        brightness = processed_pixels[
-            y * TARGET_WIDTH + x
-        ]
+rows_txt = []
 
-        index = int(
-            (255 - brightness)
-            / 255
+
+for y in range(ROWS):
+
+    chars = []
+
+    for x in range(COLS):
+
+        lum = px[x, y] / 255.0
+
+        lum = pow(
+            lum,
+            GAMMA
+        )
+
+        # Remove very bright background
+        if lum >= WHITE_FLOOR:
+
+            chars.append(" ")
+
+            continue
+
+
+        idx = int(
+            (1.0 - lum)
             * (len(RAMP) - 1)
+            + 0.5
         )
 
-        row.append(
-            RAMP[index]
+
+        idx = max(
+            0,
+            min(
+                len(RAMP) - 1,
+                idx
+            )
         )
 
-    rows.append(
-        "".join(row)
+
+        chars.append(
+            RAMP[idx]
+        )
+
+
+    rows_txt.append(
+        "".join(chars)
     )
 
 
-svg_width = TARGET_WIDTH * CHAR_WIDTH
-svg_height = target_height * CHAR_HEIGHT
+# ============================================================
+# SVG
+# ============================================================
+
+art_top = (
+    TITLEBAR_H
+    + PAD * 0.35
+)
 
 
-svg = []
+parts = []
 
-svg.append(
-    f'''<svg xmlns="http://www.w3.org/2000/svg"
-    width="{svg_width}"
-    height="{svg_height}"
-    viewBox="0 0 {svg_width} {svg_height}">
+
+parts.append(
+    f'''
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="{CANVAS_W}"
+    height="{CANVAS_H}"
+    viewBox="0 0 {CANVAS_W} {CANVAS_H}"
+    font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
 '''
 )
 
 
-# ---------------------------------------
-# SLOW TERMINAL ANIMATION
-# ---------------------------------------
+# ============================================================
+# BACKGROUND GRADIENT
+# ============================================================
 
-svg.append(
-    """
-<style>
+parts.append(
+    f'''
+<defs>
 
-.ascii-row {
+<linearGradient
+    id="bg"
+    x1="0"
+    y1="0"
+    x2="0"
+    y2="1">
 
-    opacity: 0;
+    <stop
+        offset="0"
+        stop-color="{BG2}"
+    />
 
-    transform:
-        translateX(-10px);
+    <stop
+        offset="1"
+        stop-color="{BG}"
+    />
 
-    animation:
-        asciiReveal
-        0.75s
-        cubic-bezier(.2,.8,.2,1)
-        forwards;
-}
+</linearGradient>
 
-
-@keyframes asciiReveal {
-
-    0% {
-
-        opacity: 0;
-
-        transform:
-            translateX(-10px);
-    }
-
-    100% {
-
-        opacity: 1;
-
-        transform:
-            translateX(0);
-    }
-
-}
-
-</style>
-"""
+</defs>
+'''
 )
 
 
-# ---------------------------------------
-# DARK BACKGROUND
-# ---------------------------------------
-
-svg.append(
+parts.append(
     f'''
 <rect
-    width="100%"
-    height="100%"
-    fill="{BACKGROUND}"
+    width="{CANVAS_W}"
+    height="{CANVAS_H}"
+    rx="12"
+    fill="url(#bg)"
+/>
+
+<rect
+    x="0.5"
+    y="0.5"
+    width="{CANVAS_W - 1}"
+    height="{CANVAS_H - 1}"
+    rx="12"
+    fill="none"
+    stroke="{FRAME}"
+    stroke-width="1"
 />
 '''
 )
 
 
-# ---------------------------------------
-# ASCII ROWS
-# ---------------------------------------
+# ============================================================
+# TERMINAL TITLE BAR
+# ============================================================
 
-for row_index, row in enumerate(rows):
+parts.append(
+    f'''
+<line
+    x1="0"
+    y1="{TITLEBAR_H}"
+    x2="{CANVAS_W}"
+    y2="{TITLEBAR_H}"
+    stroke="{FRAME}"
+/>
+'''
+)
 
-    y = (
-        row_index + 1
-    ) * CHAR_HEIGHT
 
-    # SLOWER ROW-BY-ROW STAGGER
-    delay = row_index * 0.055
+for i, dotcol in enumerate(
+    [
+        "#ff5f56",
+        "#ffbd2e",
+        "#27c93f"
+    ]
+):
 
-    escaped = (
-        row
-        .replace("&", "&amp;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-    )
-
-    svg.append(
+    parts.append(
         f'''
-<text
-    class="ascii-row"
-    x="0"
-    y="{y}"
-    font-family="Consolas, Monaco, monospace"
-    font-size="{FONT_SIZE}px"
-    font-weight="600"
-    fill="{TEXT_COLOR}"
-    style="animation-delay:{delay:.3f}s;
-           white-space:pre;">
-    {escaped}</text>
+<circle
+    cx="{PAD + i * 16}"
+    cy="{TITLEBAR_H / 2}"
+    r="5"
+    fill="{dotcol}"
+/>
 '''
     )
 
 
-svg.append("</svg>")
+parts.append(
+    f'''
+<text
+    x="{CANVAS_W / 2}"
+    y="{TITLEBAR_H / 2 + 4}"
+    fill="{TITLE_TEXT}"
+    font-size="12"
+    text-anchor="middle">
 
+    sayan@github: ~$ ./portrait.sh
 
-OUTPUT_FILE.write_text(
-    "\n".join(svg),
-    encoding="utf-8"
+</text>
+'''
 )
 
 
-print()
-print("======================================")
-print(" DARK ASCII SVG CREATED")
-print("======================================")
-print()
+# ============================================================
+# ASCII PORTRAIT
+# ============================================================
 
-print(f"Input : {INPUT_FILE}")
-print(f"Output: {OUTPUT_FILE}")
+font_size = (
+    CELL_H * 0.86
+)
 
-print()
 
-print(f"Grid  : {TARGET_WIDTH} x {target_height}")
+for ry, line in enumerate(
+    rows_txt
+):
 
-print("Theme : Dark Terminal")
+    y = (
+        art_top
+        + ry * CELL_H
+        + CELL_H * 0.74
+    )
 
-print("Text  : #e6edf3")
+    row_y = (
+        art_top
+        + ry * CELL_H
+    )
 
-print("Background : #0d1117")
 
-print("Animation : Slow row-by-row")
+    delay = (
+        ry * STAGGER
+    )
+
+
+    safe = html.escape(
+        line
+    )
+
+
+    text = (
+        f'<text '
+        f'xml:space="preserve" '
+        f'x="{PAD}" '
+        f'y="{y:.1f}" '
+        f'fill="{INK}" '
+        f'font-size="{font_size:.1f}" '
+        f'textLength="{ART_W}" '
+        f'lengthAdjust="spacing">'
+        f'{safe}'
+        f'</text>'
+    )
+
+
+    if STATIC:
+
+        parts.append(
+            text
+        )
+
+        continue
+
+
+    # ---------------------------------------
+    # ROW CLIP / TYPING EFFECT
+    # ---------------------------------------
+
+    parts.append(
+        f'''
+<clipPath id="r{ry}">
+
+    <rect
+        x="{PAD}"
+        y="{row_y:.1f}"
+        height="{CELL_H}"
+        width="0">
+
+        <animate
+            attributeName="width"
+            from="0"
+            to="{ART_W}"
+            begin="{delay:.3f}s"
+            dur="{ROW_DUR:.2f}s"
+            fill="freeze"
+        />
+
+    </rect>
+
+</clipPath>
+'''
+    )
+
+
+    parts.append(
+        f'''
+<g clip-path="url(#r{ry})">
+
+    {text}
+
+</g>
+'''
+    )
+
+
+    # Cursor follows the typing edge
+    parts.append(
+        f'''
+<rect
+    y="{row_y + 1:.1f}"
+    width="{CELL_W}"
+    height="{CELL_H - 2}"
+    fill="{CURSOR}"
+    opacity="0">
+
+    <animate
+        attributeName="x"
+        from="{PAD}"
+        to="{PAD + ART_W}"
+        begin="{delay:.3f}s"
+        dur="{ROW_DUR:.2f}s"
+        fill="freeze"
+    />
+
+    <set
+        attributeName="opacity"
+        to="0.85"
+        begin="{delay:.3f}s"
+    />
+
+    <set
+        attributeName="opacity"
+        to="0"
+        begin="{delay + ROW_DUR:.3f}s"
+    />
+
+</rect>
+'''
+    )
+
+
+# ============================================================
+# TERMINAL STATUS BAR
+# ============================================================
+
+status_line_y = (
+    TITLEBAR_H
+    + ART_H
+    + PAD * 0.35
+)
+
+status_y = (
+    status_line_y
+    + 19
+)
+
+
+parts.append(
+    f'''
+<line
+    x1="0"
+    y1="{status_line_y:.1f}"
+    x2="{CANVAS_W}"
+    y2="{status_line_y:.1f}"
+    stroke="{FRAME}"
+/>
+
+<text
+    x="{PAD}"
+    y="{status_y:.1f}"
+    fill="{TITLE_TEXT}"
+    font-size="13">
+
+    sayan@github:~$ whoami
+
+    <tspan fill="{INK}">
+        Sayan Pal
+    </tspan>
+
+</text>
+'''
+)
+
+
+# ============================================================
+# BLINKING CURSOR
+# ============================================================
+
+status_chars = len(
+    "sayan@github:~$ whoami Sayan Pal "
+)
+
+
+parts.append(
+    f'''
+<rect
+    x="{PAD + status_chars * 13 * 0.6:.1f}"
+    y="{status_y - 12:.1f}"
+    width="8"
+    height="14"
+    fill="{INK}">
+
+    <animate
+        attributeName="opacity"
+        values="1;1;0;0"
+        keyTimes="0;0.5;0.51;1"
+        dur="1s"
+        repeatCount="indefinite"
+    />
+
+</rect>
+'''
+)
+
+
+parts.append(
+    "</svg>"
+)
+
+
+# ============================================================
+# SAVE
+# ============================================================
+
+svg = "".join(
+    parts
+)
+
+
+with open(
+    OUT,
+    "w",
+    encoding="utf-8"
+) as f:
+
+    f.write(
+        svg
+    )
+
+
+print(
+    "Created:",
+    OUT
+)
+
+print(
+    "Size:",
+    CANVAS_W,
+    "x",
+    CANVAS_H
+)
+
+print(
+    "ASCII grid:",
+    COLS,
+    "x",
+    ROWS
+)
+
+print(
+    "Animation:",
+    "~6 seconds"
+)
 
 print()
