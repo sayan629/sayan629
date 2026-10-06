@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="770" height="1162" viewBox="0 0 770 1162">
+
+<style>
+
+.ascii-row {
+
+    opacity: 0;
+
+    transform: translateX(-18px);
+
+    animation:
+        asciiReveal
+        0.38s
+        cubic-bezier(.2,.8,.2,1)
+        forwards;
+}
+
+
+@keyframes asciiReveal {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translateX(-18px);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform:
+            translateX(0);
+
+    }
+
+}
+
+</style>
+
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text class="ascii-row" x="0" y="14" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.000s;white-space:pre;">                                                                                                              </text>
+<text class="ascii-row" x="0" y="28" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.025s;white-space:pre;">                                                                                                              </text>
+<text class="ascii-row" x="0" y="42" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.050s;white-space:pre;">                                                                                                              </text>
+<text class="ascii-row" x="0" y="56" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.075s;white-space:pre;">                                                                                                              </text>
+<text class="ascii-row" x="0" y="70" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.100s;white-space:pre;">                                                                                                              </text>
+<text class="ascii-row" x="0" y="84" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.125s;white-space:pre;">                                                                                                              </text>
+<text class="ascii-row" x="0" y="98" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.150s;white-space:pre;">                                                                                                              </text>
+<text class="ascii-row" x="0" y="112" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.175s;white-space:pre;">                                                                                                              </text>
+<text class="ascii-row" x="0" y="126" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.200s;white-space:pre;">                                                                                                              </text>
+<text class="ascii-row" x="0" y="140" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.225s;white-space:pre;">                                                                                                              </text>
+<text class="ascii-row" x="0" y="154" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.250s;white-space:pre;">                                                                                                              </text>
+<text class="ascii-row" x="0" y="168" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.275s;white-space:pre;">                                                                                                              </text>
+<text class="ascii-row" x="0" y="182" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.300s;white-space:pre;">                                                                                                              </text>
+<text class="ascii-row" x="0" y="196" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.325s;white-space:pre;">                                                                                                              </text>
+<text class="ascii-row" x="0" y="210" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.350s;white-space:pre;">                                                                                                              </text>
+<text class="ascii-row" x="0" y="224" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.375s;white-space:pre;">                                                                                                              </text>
+<text class="ascii-row" x="0" y="238" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.400s;white-space:pre;">                                                                                                              </text>
+<text class="ascii-row" x="0" y="252" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.425s;white-space:pre;">                                                                                                              </text>
+<text class="ascii-row" x="0" y="266" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.450s;white-space:pre;">                                                                                                              </text>
+<text class="ascii-row" x="0" y="280" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.475s;white-space:pre;">                                                     ..:...                                                   </text>
+<text class="ascii-row" x="0" y="294" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.500s;white-space:pre;">                                               .=+*#@@@@@@@@#+--.                                             </text>
+<text class="ascii-row" x="0" y="308" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.525s;white-space:pre;">                                            -+#@@@@@@@@@@@@@@@@@@#=.                                          </text>
+<text class="ascii-row" x="0" y="322" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.550s;white-space:pre;">                                          :@@@@@@@@@@@@@@@@@@@@@@@@@*+.                                       </text>
+<text class="ascii-row" x="0" y="336" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.575s;white-space:pre;">                                         =@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.                                      </text>
+<text class="ascii-row" x="0" y="350" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.600s;white-space:pre;">                                       .#@@@@@@@@@@@@@@@@*+*#@@@@@@@@@@+                                      </text>
+<text class="ascii-row" x="0" y="364" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.625s;white-space:pre;">                                       *@@@@@@@@@@@@@@@#+++++#@@@@@@@@@@                                      </text>
+<text class="ascii-row" x="0" y="378" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.650s;white-space:pre;">                                      =@@@@@@@@@@@@@@#-...:-=**@@@@@@@@@.                                     </text>
+<text class="ascii-row" x="0" y="392" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.675s;white-space:pre;">                                      #@@@@@@*----=--::=+*####**#@@@@@@@                                      </text>
+<text class="ascii-row" x="0" y="406" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.700s;white-space:pre;">                                      +@@@@@#++***=+**@@@@@@@@@@#+*@@@@-                                      </text>
+<text class="ascii-row" x="0" y="420" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.725s;white-space:pre;">                                       =@@*#@@@@@@@@@@@@@@@@@@@@@*=#@@@=                                      </text>
+<text class="ascii-row" x="0" y="434" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.750s;white-space:pre;">                                        .*#@@@@@@@@@::#@@@@@@@#**+=+@@@@                                      </text>
+<text class="ascii-row" x="0" y="448" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.775s;white-space:pre;">                                         :*#@@@@@@#-  :=++==-: :-==+@@@*                                      </text>
+<text class="ascii-row" x="0" y="462" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.800s;white-space:pre;">                                         .=---=+--:    ..=+:..:-=*+*@@@:                                      </text>
+<text class="ascii-row" x="0" y="476" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.825s;white-space:pre;">                                          -=:   -*:.:-=*+*@@@##@@@##@@+                                       </text>
+<text class="ascii-row" x="0" y="490" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.850s;white-space:pre;">                                          :*--+*@#+@@@@@@@@@@@@@@@@@@=.                                       </text>
+<text class="ascii-row" x="0" y="504" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.875s;white-space:pre;">                                           =#*@@@##@@@@@@@@@@@@@@@@@@                                         </text>
+<text class="ascii-row" x="0" y="518" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.900s;white-space:pre;">                                           .@@#@@@@@#*#@*#@@@@@@@@@@@                                         </text>
+<text class="ascii-row" x="0" y="532" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.925s;white-space:pre;">                                            -@@@@@##@@@@@@@@@@@@@@@@@.                                        </text>
+<text class="ascii-row" x="0" y="546" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.950s;white-space:pre;">                                             -@@@@#+==+*##*#@@@@@@@@@:                                        </text>
+<text class="ascii-row" x="0" y="560" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:0.975s;white-space:pre;">                                              :@@@@@@#@@@@@@@@@@@@@@@-                                        </text>
+<text class="ascii-row" x="0" y="574" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.000s;white-space:pre;">                                               +@@@@@@@@@@@@@@@@@@@@@+.                                       </text>
+<text class="ascii-row" x="0" y="588" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.025s;white-space:pre;">                                               =@@@@@@@@@@@@@@@@@@@@@@#:                                      </text>
+<text class="ascii-row" x="0" y="602" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.050s;white-space:pre;">                                               :#@@@@@@@@@@@@@@@@@@@@*-=                                      </text>
+<text class="ascii-row" x="0" y="616" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.075s;white-space:pre;">                                           .-+.  =@@@@@@@@@@@@@@@@@##====@#=:.                                </text>
+<text class="ascii-row" x="0" y="630" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.100s;white-space:pre;">                                       :-=+@*@+..:-+#@@@@@@@@@@@@@*#@**@@@@@**@=::                            </text>
+<text class="ascii-row" x="0" y="644" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.125s;white-space:pre;">                                   :--=@#+@@**@#*=-++#@@@@@@@**@@@@@@@@@@@@*+#@***+++=-                       </text>
+<text class="ascii-row" x="0" y="658" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.150s;white-space:pre;">                             ..--=+**-@@**@@**@@+==#@@@@@@@@#@@@@@@@##@@@@***@*++=*#@**++-.                   </text>
+<text class="ascii-row" x="0" y="672" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.175s;white-space:pre;">                          .-++++++@#+*@@#@@@*#@@=-+*=#@@@@#@@@@@@@@*+@@@@*##@@*+++*@*##@@@@*=.                </text>
+<text class="ascii-row" x="0" y="686" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.200s;white-space:pre;">                        :+***@#*+@@#@@@@#@#@##@@*+=+=+=*@*@@@@@@@**+*@@@@*@@@@####@@#@@@@@@@@@=               </text>
+<text class="ascii-row" x="0" y="700" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.225s;white-space:pre;">                       :#@@@@@@@*@@@@@@@@@@@@#@@*-+:.=++-=@==*#=..=-=@@@@@@@@@@@@@@@@@@@@@@@@@@+              </text>
+<text class="ascii-row" x="0" y="714" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.250s;white-space:pre;">                      :##@@@@@@@@@@@@@@@@@@@@#@@@=+-=#**.-@ :++*--==@@@@@@@@@@@@@@@@@@@@@@@@@@@@+             </text>
+<text class="ascii-row" x="0" y="728" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.275s;white-space:pre;">                     :##@@@@@@@@@@@@@@@@@@@#@#@@*#-=+*++ +# -+++=:-**@@@@@@@@@@@@@@@@@@@@@@@@@@@@:            </text>
+<text class="ascii-row" x="0" y="742" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.300s;white-space:pre;">                    .+@##@@@@@@@@@@@*@@@@@@@@@@@*=##+*#+ ** =*#++#--#@@@#@@@@@@@@@@@@@@@@@@@@@@@@*            </text>
+<text class="ascii-row" x="0" y="756" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.325s;white-space:pre;">                   :@@@@@@@@@@@@@@@@+@@@@@@@@@@@#***++*= #+ ++*+*+=+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@            </text>
+<text class="ascii-row" x="0" y="770" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.350s;white-space:pre;">                   -@@@@@@@@@@@@@@@@@@@@@@@@@@@@*++-+**- @=.*++=-+++@@@@@@@@@@@@@@@@@@@@@#@@@@@@@@            </text>
+<text class="ascii-row" x="0" y="784" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.375s;white-space:pre;">                   .@@@@@@@@@@@@@@@@@@@@@@@@@@@@-+=::**-:@=:**=..=-=@@@@@@@@@@@@@@@@@@@@@#@@@@@@@@+.          </text>
+<text class="ascii-row" x="0" y="798" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.400s;white-space:pre;">                   +@@@####***#@@@@@@@@@@@@@@@@@+++=#@*--@+-*#@+=+=@@@@@@@@@@@@@@@@@@@@@#####@@@@@@.          </text>
+<text class="ascii-row" x="0" y="812" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.425s;white-space:pre;">                   *@******##@@@@@@@@@@@@#@@@@@#@=-+#**--@=-++*=-:#*@@@@*@@@@@@@@@@@@@@*++***#@@@@@.          </text>
+<text class="ascii-row" x="0" y="826" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.450s;white-space:pre;">                   #@@****######@@@@@@@@@**@@@@#+*@####:-@-:###*@*+*@@@@*@@@@@@#-+*::*##****#@@@@@@=          </text>
+<text class="ascii-row" x="0" y="840" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.475s;white-space:pre;">                  -@@###****#@@@@@@@@@@@@@@@@@@#=+#**@@-+@++##**#++@@@@@@@@@@#=:.-. :#@#*++*#@@@@@@@=         </text>
+<text class="ascii-row" x="0" y="854" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.500s;white-space:pre;">                .#@@@@@#**#@@@@@@@@@@@@@@@@@@@@@#**#**#:+@:-#*#*#*@@@@@@@@@@+::.::-+@@@@#@#@@@@@@@@@@=        </text>
+<text class="ascii-row" x="0" y="868" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.525s;white-space:pre;">                .@@@##***#@@@@@@@@@@@#*#@@@@@@@@#*+=+**.*@:+@*++*##@@@@@@@#-::--:-+***@##@@@@@@@@@@@@*        </text>
+<text class="ascii-row" x="0" y="882" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.550s;white-space:pre;">                 +@@@@@@@@@@@@@@@@@@=  ..:-=+*##-.    =+**-***=+=*+###*+-:     -+++**#@@@@@@@@@@@@@@#.        </text>
+<text class="ascii-row" x="0" y="896" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.575s;white-space:pre;">                *@@@@@@@@@@@@@@@@@@=.. .......:::...=**-..::... .....      ..:::#@@@@@@@@@@@@@@@@@@@:         </text>
+<text class="ascii-row" x="0" y="910" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.600s;white-space:pre;">                @@@@@@@@####@@@@@@@*:::....    :@@@@@*-:::::..........:::----===*@@@@@@@@@@@@@@@@@@@=         </text>
+<text class="ascii-row" x="0" y="924" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.625s;white-space:pre;">                -@@@@@@@@@####***##*=-:.     .-=@@@@#++++++++++==++=++++++***#@@@@@@@@@@@@@@@@@@@@@@*         </text>
+<text class="ascii-row" x="0" y="938" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.650s;white-space:pre;">                 @@@@@@@@@@@@@#@#**#@#*=---=+*#@@@@@@@@@##**#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#.         </text>
+<text class="ascii-row" x="0" y="952" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.675s;white-space:pre;">                 -@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@##@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.          </text>
+<text class="ascii-row" x="0" y="966" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.700s;white-space:pre;">                  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#@@@@@@@@@@@@@@@@@@@@@@@@@@@@*.           </text>
+<text class="ascii-row" x="0" y="980" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.725s;white-space:pre;">                  :@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@+             </text>
+<text class="ascii-row" x="0" y="994" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.750s;white-space:pre;">                   #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#*#+-.              </text>
+<text class="ascii-row" x="0" y="1008" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.775s;white-space:pre;">                   :@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@+                   </text>
+<text class="ascii-row" x="0" y="1022" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.800s;white-space:pre;">                    *@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                   </text>
+<text class="ascii-row" x="0" y="1036" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.825s;white-space:pre;">                     -*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:                  </text>
+<text class="ascii-row" x="0" y="1050" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.850s;white-space:pre;">                           .*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#                  </text>
+<text class="ascii-row" x="0" y="1064" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.875s;white-space:pre;">                            +@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.                 </text>
+<text class="ascii-row" x="0" y="1078" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.900s;white-space:pre;">                            *@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@=                 </text>
+<text class="ascii-row" x="0" y="1092" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.925s;white-space:pre;">                            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*                 </text>
+<text class="ascii-row" x="0" y="1106" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.950s;white-space:pre;">                           :@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#                 </text>
+<text class="ascii-row" x="0" y="1120" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:1.975s;white-space:pre;">                           +@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.                </text>
+<text class="ascii-row" x="0" y="1134" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:2.000s;white-space:pre;">                           #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@+                </text>
+<text class="ascii-row" x="0" y="1148" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:2.025s;white-space:pre;">                          -@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@+                </text>
+<text class="ascii-row" x="0" y="1162" font-family="Consolas, Monaco, monospace" font-size="10px" font-weight="600" fill="#111111" style="animation-delay:2.050s;white-space:pre;">                          #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:                </text>
+</svg>

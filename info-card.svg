@@ -1,0 +1,346 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    width="490"
+    height="520"
+    viewBox="0 0 490 520">
+
+
+<style>
+
+.card-line {
+    opacity: 0;
+    transform: translateY(8px);
+    animation:
+        lineReveal
+        0.45s
+        ease-out
+        forwards;
+}
+
+@keyframes lineReveal {
+
+    0% {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.cursor {
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+
+    0%, 50% {
+        opacity: 1;
+    }
+
+    51%, 100% {
+        opacity: 0;
+    }
+
+}
+
+</style>
+
+
+<rect
+    x="0"
+    y="0"
+    width="490"
+    height="520"
+    rx="12"
+    fill="#ffffff"
+    stroke="#111111"
+    stroke-width="2"
+/>
+
+
+<rect
+    x="0"
+    y="0"
+    width="490"
+    height="42"
+    rx="12"
+    fill="#111111"
+/>
+
+<circle cx="20" cy="21" r="6" fill="#ffffff"/>
+<circle cx="40" cy="21" r="6" fill="#ffffff"/>
+<circle cx="60" cy="21" r="6" fill="#ffffff"/>
+
+<text
+    x="245"
+    y="27"
+    text-anchor="middle"
+    font-family="Consolas, Monaco, monospace"
+    font-size="13"
+    fill="#ffffff">
+    sayan@github ~
+</text>
+
+
+<text
+    class="card-line"
+    x="28"
+    y="76"
+    font-family="Consolas, Monaco, monospace"
+    font-size="14px"
+    font-weight="600"
+    fill="#111111"
+    style="animation-delay:0.00s;">
+    $ whoami
+</text>
+
+
+<text
+    class="card-line"
+    x="28"
+    y="96"
+    font-family="Consolas, Monaco, monospace"
+    font-size="25px"
+    font-weight="700"
+    fill="#111111"
+    style="animation-delay:0.08s;">
+    Sayan Pal
+</text>
+
+
+<text
+    class="card-line"
+    x="28"
+    y="126"
+    font-family="Consolas, Monaco, monospace"
+    font-size="14px"
+    font-weight="600"
+    fill="#111111"
+    style="animation-delay:0.16s;">
+    $ education
+</text>
+
+
+<text
+    class="card-line"
+    x="28"
+    y="146"
+    font-family="Consolas, Monaco, monospace"
+    font-size="13px"
+    font-weight="400"
+    fill="#666666"
+    style="animation-delay:0.24s;">
+    MCA @ KIIT
+</text>
+
+
+<text
+    class="card-line"
+    x="28"
+    y="176"
+    font-family="Consolas, Monaco, monospace"
+    font-size="14px"
+    font-weight="600"
+    fill="#111111"
+    style="animation-delay:0.32s;">
+    $ focus
+</text>
+
+
+<text
+    class="card-line"
+    x="28"
+    y="196"
+    font-family="Consolas, Monaco, monospace"
+    font-size="13px"
+    font-weight="400"
+    fill="#666666"
+    style="animation-delay:0.40s;">
+    AI / ML / Software Development
+</text>
+
+
+<text
+    class="card-line"
+    x="28"
+    y="226"
+    font-family="Consolas, Monaco, monospace"
+    font-size="14px"
+    font-weight="600"
+    fill="#111111"
+    style="animation-delay:0.48s;">
+    $ stack
+</text>
+
+
+<text
+    class="card-line"
+    x="28"
+    y="246"
+    font-family="Consolas, Monaco, monospace"
+    font-size="13px"
+    font-weight="400"
+    fill="#666666"
+    style="animation-delay:0.56s;">
+    Python     JavaScript     Java
+</text>
+
+
+<text
+    class="card-line"
+    x="28"
+    y="266"
+    font-family="Consolas, Monaco, monospace"
+    font-size="13px"
+    font-weight="400"
+    fill="#666666"
+    style="animation-delay:0.64s;">
+    React      Next.js        FastAPI
+</text>
+
+
+<text
+    class="card-line"
+    x="28"
+    y="286"
+    font-family="Consolas, Monaco, monospace"
+    font-size="13px"
+    font-weight="400"
+    fill="#666666"
+    style="animation-delay:0.72s;">
+    Node.js    MongoDB        Docker
+</text>
+
+
+<text
+    class="card-line"
+    x="28"
+    y="306"
+    font-family="Consolas, Monaco, monospace"
+    font-size="13px"
+    font-weight="400"
+    fill="#666666"
+    style="animation-delay:0.80s;">
+    Git        LangChain      LangGraph
+</text>
+
+
+<text
+    class="card-line"
+    x="28"
+    y="336"
+    font-family="Consolas, Monaco, monospace"
+    font-size="14px"
+    font-weight="600"
+    fill="#111111"
+    style="animation-delay:0.88s;">
+    $ projects
+</text>
+
+
+<text
+    class="card-line"
+    x="28"
+    y="356"
+    font-family="Consolas, Monaco, monospace"
+    font-size="13px"
+    font-weight="400"
+    fill="#666666"
+    style="animation-delay:0.96s;">
+    OryntisAI
+</text>
+
+
+<text
+    class="card-line"
+    x="28"
+    y="376"
+    font-family="Consolas, Monaco, monospace"
+    font-size="13px"
+    font-weight="400"
+    fill="#666666"
+    style="animation-delay:1.04s;">
+    Prepzy
+</text>
+
+
+<text
+    class="card-line"
+    x="28"
+    y="396"
+    font-family="Consolas, Monaco, monospace"
+    font-size="13px"
+    font-weight="400"
+    fill="#666666"
+    style="animation-delay:1.12s;">
+    AiPaperPilot
+</text>
+
+
+<text
+    class="card-line"
+    x="28"
+    y="416"
+    font-family="Consolas, Monaco, monospace"
+    font-size="13px"
+    font-weight="400"
+    fill="#666666"
+    style="animation-delay:1.20s;">
+    Agentic AI Calendar
+</text>
+
+
+<text
+    class="card-line"
+    x="28"
+    y="446"
+    font-family="Consolas, Monaco, monospace"
+    font-size="14px"
+    font-weight="600"
+    fill="#111111"
+    style="animation-delay:1.28s;">
+    $ status
+</text>
+
+
+<text
+    class="card-line"
+    x="28"
+    y="466"
+    font-family="Consolas, Monaco, monospace"
+    font-size="13px"
+    font-weight="400"
+    fill="#666666"
+    style="animation-delay:1.36s;">
+    Building intelligent systems.
+</text>
+
+
+<text
+    class="card-line"
+    x="28"
+    y="486"
+    font-family="Consolas, Monaco, monospace"
+    font-size="13px"
+    font-weight="400"
+    fill="#666666"
+    style="animation-delay:1.44s;">
+    Always learning. Always shipping.
+</text>
+
+
+<text
+    class="cursor"
+    x="28"
+    y="500"
+    font-family="Consolas, Monaco, monospace"
+    font-size="14"
+    font-weight="700"
+    fill="#111111">
+    █
+</text>
+
+</svg>
