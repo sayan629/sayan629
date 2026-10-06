@@ -1,10 +1,82 @@
 {
   "username": "sayan629",
   "source": "https://github.com/users/sayan629/contributions",
-  "fetched_at": "2026-10-06T06:15:36.320577+00:00",
-  "total_contributions": 1889,
+  "generated_at": "2026-10-06T06:37:10Z",
+  "range": {
+    "start": "2025-10-05",
+    "end": "2026-10-06"
+  },
+  "total_contributions": 1890,
   "active_days": 217,
-  "peak_day": 44,
+  "avg_per_active_day": 8.7,
+  "current_streak": {
+    "length": 50,
+    "start": "2026-08-18",
+    "end": "2026-10-06"
+  },
+  "longest_streak": {
+    "length": 50,
+    "start": "2026-08-18",
+    "end": "2026-10-06"
+  },
+  "best_day": {
+    "date": "2026-10-02",
+    "count": 44
+  },
+  "monthly": [
+    {
+      "month": "2025-10",
+      "total": 0
+    },
+    {
+      "month": "2025-11",
+      "total": 4
+    },
+    {
+      "month": "2025-12",
+      "total": 0
+    },
+    {
+      "month": "2026-01",
+      "total": 39
+    },
+    {
+      "month": "2026-02",
+      "total": 72
+    },
+    {
+      "month": "2026-03",
+      "total": 226
+    },
+    {
+      "month": "2026-04",
+      "total": 55
+    },
+    {
+      "month": "2026-05",
+      "total": 248
+    },
+    {
+      "month": "2026-06",
+      "total": 491
+    },
+    {
+      "month": "2026-07",
+      "total": 246
+    },
+    {
+      "month": "2026-08",
+      "total": 169
+    },
+    {
+      "month": "2026-09",
+      "total": 255
+    },
+    {
+      "month": "2026-10",
+      "total": 85
+    }
+  ],
   "days": [
     {
       "date": "2025-10-05",
@@ -1838,7 +1910,7 @@
     },
     {
       "date": "2026-10-06",
-      "count": 4,
+      "count": 5,
       "level": 1
     }
   ]

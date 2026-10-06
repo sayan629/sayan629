@@ -1,70 +1,132 @@
-from PIL import Image, ImageEnhance, ImageOps, ImageFilter
+"""
+Generate a monochrome terminal-style ASCII portrait for Sayan Pal.
+
+- Uses data/source-prepped.png
+- Dark GitHub-style terminal background
+- High-detail ASCII portrait
+- Single light-gray ASCII color
+- Slow row-by-row terminal printing animation
+- No JavaScript
+- STATIC=1 creates a frozen preview
+"""
+
+from PIL import Image, ImageEnhance, ImageFilter
 import html
 import os
 import sys
 
-HERE = os.path.dirname(os.path.abspath(__file__))
+
+# ============================================================
+# PATHS
+# ============================================================
+
+HERE = os.path.dirname(
+    os.path.abspath(__file__)
+)
+
 BASE_DIR = os.path.dirname(HERE)
 
-# Your processed portrait
 SRC = (
     sys.argv[1]
     if len(sys.argv) > 1
-    else os.path.join(BASE_DIR, "data", "source-prepped.png")
+    else os.path.join(
+        BASE_DIR,
+        "data",
+        "source-prepped.png"
+    )
 )
 
 OUT = (
     sys.argv[2]
     if len(sys.argv) > 2
-    else os.path.join(BASE_DIR, "avi-ascii.svg")
+    else os.path.join(
+        BASE_DIR,
+        "avi-ascii.svg"
+    )
 )
 
+
 # ============================================================
-# ASCII DETAIL
+# ASCII QUALITY
 # ============================================================
 
-COLS = int(os.environ.get("COLS", 180))
+# More columns = more facial detail.
+COLS = int(
+    os.environ.get(
+        "COLS",
+        180
+    )
+)
 
 ART_W_TARGET = 800
 
-CELL_W = ART_W_TARGET / COLS
-CELL_H = CELL_W * 15 / 8
+CELL_W = (
+    ART_W_TARGET / COLS
+)
+
+CELL_H = (
+    CELL_W * 15 / 8
+)
 
 ROWS = round(
     COLS * 8 / 15
 )
 
-RAMP = " .`:-=+*cs#%@"
+
+# Dark → light density ramp
+RAMP = (
+    " .`:-=+*cs#%@"
+)
+
 
 # ============================================================
 # IMAGE TUNING
 # ============================================================
 
-CONTRAST = 1.05
-BRIGHTNESS = 1.0
+CONTRAST = 1.15
 
-GAMMA = 1.18
+BRIGHTNESS = 1.02
 
-SHARPEN = False
+# Slightly lower gamma keeps facial features visible.
+GAMMA = 1.05
 
-WHITE_FLOOR = 0.80
+SHARPEN = True
+
+WHITE_FLOOR = 0.82
+
 
 # ============================================================
-# TERMINAL DESIGN
+# TERMINAL FRAME
 # ============================================================
 
 PAD = 20
 
 TITLEBAR_H = 30
+
 STATUS_H = 30
 
 ART_W = COLS * CELL_W
+
 ART_H = ROWS * CELL_H
 
-CANVAS_W = ART_W + PAD * 2
-CANVAS_H = TITLEBAR_H + ART_H + STATUS_H + PAD
+CANVAS_W = (
+    ART_W + PAD * 2
+)
+
+CANVAS_H = (
+    TITLEBAR_H
+    + ART_H
+    + STATUS_H
+    + PAD
+)
+
+
+# ============================================================
+# COLORS
+# ============================================================
 
 BG = "#0d1117"
+
 BG2 = "#111722"
 
 FRAME = "#30363d"
@@ -75,67 +137,83 @@ INK = "#c9d1d9"
 
 CURSOR = "#c9d1d9"
 
+
 # ============================================================
-# SLOW ANIMATION
+# ANIMATION
 # ============================================================
 
-ROW_DUR = 5.8 / ROWS
+# MUCH slower than the previous version.
+#
+# Entire portrait takes around 11 seconds.
+#
+# Change to 14.0 if you want it even slower.
+
+TOTAL_REVEAL_TIME = 11.0
+
+ROW_DUR = (
+    TOTAL_REVEAL_TIME / ROWS
+)
 
 STAGGER = ROW_DUR
 
+
 # ============================================================
-# LOAD YOUR PHOTO
+# CHECK INPUT
 # ============================================================
-
-print()
-print("======================================")
-print(" CREATING ASCII PORTRAIT")
-print("======================================")
-print()
-
-print("Source :", SRC)
-print("Output :", OUT)
-print()
-
 
 if not os.path.exists(SRC):
+
     raise FileNotFoundError(
-        f"Photo not found: {SRC}"
+        f"""
+Source image not found:
+
+{SRC}
+
+Expected file:
+
+data/source-prepped.png
+"""
     )
 
 
-im = Image.open(SRC).convert("L")
-
-
 # ============================================================
-# IMAGE PROCESSING
+# LOAD IMAGE
 # ============================================================
 
+im = Image.open(
+    SRC
+).convert("L")
+
+
+# Sharpen facial details
 if SHARPEN:
 
     im = im.filter(
         ImageFilter.UnsharpMask(
             radius=2,
-            percent=140,
+            percent=160,
             threshold=2
         )
     )
 
 
+# Brightness
 im = ImageEnhance.Brightness(
     im
-).enhance(BRIGHTNESS)
+).enhance(
+    BRIGHTNESS
+)
 
 
+# Contrast
 im = ImageEnhance.Contrast(
     im
-).enhance(CONTRAST)
+).enhance(
+    CONTRAST
+)
 
 
-# ============================================================
-# RESIZE TO ASCII GRID
-# ============================================================
-
+# Resize to ASCII grid
 im = im.resize(
     (
         COLS,
@@ -149,11 +227,14 @@ px = im.load()
 
 
 # ============================================================
-# STATIC PREVIEW OPTION
+# STATIC MODE
 # ============================================================
 
-STATIC = bool(
-    os.environ.get("STATIC")
+STATIC = (
+    os.environ.get(
+        "STATIC",
+        ""
+    ) == "1"
 )
 
 
@@ -170,12 +251,17 @@ for y in range(ROWS):
 
     for x in range(COLS):
 
-        lum = px[x, y] / 255.0
+        lum = (
+            px[x, y] / 255.0
+        )
 
+
+        # Gamma adjustment
         lum = pow(
             lum,
             GAMMA
         )
+
 
         # Remove very bright background
         if lum >= WHITE_FLOOR:
@@ -185,24 +271,28 @@ for y in range(ROWS):
             continue
 
 
-        idx = int(
-            (1.0 - lum)
-            * (len(RAMP) - 1)
+        index = int(
+            (
+                1.0 - lum
+            )
+            * (
+                len(RAMP) - 1
+            )
             + 0.5
         )
 
 
-        idx = max(
+        index = max(
             0,
             min(
                 len(RAMP) - 1,
-                idx
+                index
             )
         )
 
 
         chars.append(
-            RAMP[idx]
+            RAMP[index]
         )
 
 
@@ -212,7 +302,7 @@ for y in range(ROWS):
 
 
 # ============================================================
-# SVG
+# ART POSITION
 # ============================================================
 
 art_top = (
@@ -220,6 +310,10 @@ art_top = (
     + PAD * 0.35
 )
 
+
+# ============================================================
+# SVG
+# ============================================================
 
 parts = []
 
@@ -244,29 +338,33 @@ parts.append(
     f'''
 <defs>
 
-<linearGradient
-    id="bg"
-    x1="0"
-    y1="0"
-    x2="0"
-    y2="1">
+    <linearGradient
+        id="bg"
+        x1="0"
+        y1="0"
+        x2="0"
+        y2="1">
 
-    <stop
-        offset="0"
-        stop-color="{BG2}"
-    />
+        <stop
+            offset="0"
+            stop-color="{BG2}"
+        />
 
-    <stop
-        offset="1"
-        stop-color="{BG}"
-    />
+        <stop
+            offset="1"
+            stop-color="{BG}"
+        />
 
-</linearGradient>
+    </linearGradient>
 
 </defs>
 '''
 )
 
+
+# ============================================================
+# TERMINAL WINDOW
+# ============================================================
 
 parts.append(
     f'''
@@ -292,7 +390,7 @@ parts.append(
 
 
 # ============================================================
-# TERMINAL TITLE BAR
+# TITLE BAR
 # ============================================================
 
 parts.append(
@@ -308,7 +406,8 @@ parts.append(
 )
 
 
-for i, dotcol in enumerate(
+# Terminal buttons
+for i, dot_color in enumerate(
     [
         "#ff5f56",
         "#ffbd2e",
@@ -322,12 +421,13 @@ for i, dotcol in enumerate(
     cx="{PAD + i * 16}"
     cy="{TITLEBAR_H / 2}"
     r="5"
-    fill="{dotcol}"
+    fill="{dot_color}"
 />
 '''
     )
 
 
+# Terminal title
 parts.append(
     f'''
 <text
@@ -337,7 +437,7 @@ parts.append(
     font-size="12"
     text-anchor="middle">
 
-    sayan@github: ~$ ./portrait.sh
+    sayan@github:~$ ./portrait.sh
 
 </text>
 '''
@@ -353,24 +453,24 @@ font_size = (
 )
 
 
-for ry, line in enumerate(
+for row_index, line in enumerate(
     rows_txt
 ):
 
     y = (
         art_top
-        + ry * CELL_H
+        + row_index * CELL_H
         + CELL_H * 0.74
     )
 
     row_y = (
         art_top
-        + ry * CELL_H
+        + row_index * CELL_H
     )
 
-
     delay = (
-        ry * STAGGER
+        row_index
+        * STAGGER
     )
 
 
@@ -393,6 +493,10 @@ for ry, line in enumerate(
     )
 
 
+    # --------------------------------------------------------
+    # STATIC
+    # --------------------------------------------------------
+
     if STATIC:
 
         parts.append(
@@ -402,13 +506,13 @@ for ry, line in enumerate(
         continue
 
 
-    # ---------------------------------------
-    # ROW CLIP / TYPING EFFECT
-    # ---------------------------------------
+    # --------------------------------------------------------
+    # ANIMATED ROW
+    # --------------------------------------------------------
 
     parts.append(
         f'''
-<clipPath id="r{ry}">
+<clipPath id="row{row_index}">
 
     <rect
         x="{PAD}"
@@ -421,7 +525,7 @@ for ry, line in enumerate(
             from="0"
             to="{ART_W}"
             begin="{delay:.3f}s"
-            dur="{ROW_DUR:.2f}s"
+            dur="{ROW_DUR:.3f}s"
             fill="freeze"
         />
 
@@ -434,7 +538,7 @@ for ry, line in enumerate(
 
     parts.append(
         f'''
-<g clip-path="url(#r{ry})">
+<g clip-path="url(#row{row_index})">
 
     {text}
 
@@ -443,7 +547,7 @@ for ry, line in enumerate(
     )
 
 
-    # Cursor follows the typing edge
+    # Moving terminal cursor
     parts.append(
         f'''
 <rect
@@ -458,7 +562,7 @@ for ry, line in enumerate(
         from="{PAD}"
         to="{PAD + ART_W}"
         begin="{delay:.3f}s"
-        dur="{ROW_DUR:.2f}s"
+        dur="{ROW_DUR:.3f}s"
         fill="freeze"
     />
 
@@ -480,7 +584,7 @@ for ry, line in enumerate(
 
 
 # ============================================================
-# TERMINAL STATUS BAR
+# STATUS BAR
 # ============================================================
 
 status_line_y = (
@@ -526,8 +630,12 @@ parts.append(
 # BLINKING CURSOR
 # ============================================================
 
-status_chars = len(
+status_text = (
     "sayan@github:~$ whoami Sayan Pal "
+)
+
+status_chars = len(
+    status_text
 )
 
 
@@ -553,53 +661,62 @@ parts.append(
 )
 
 
+# ============================================================
+# CLOSE SVG
+# ============================================================
+
 parts.append(
     "</svg>"
 )
 
-
-# ============================================================
-# SAVE
-# ============================================================
 
 svg = "".join(
     parts
 )
 
 
+# ============================================================
+# WRITE
+# ============================================================
+
 with open(
     OUT,
     "w",
     encoding="utf-8"
-) as f:
+) as file:
 
-    f.write(
+    file.write(
         svg
     )
 
 
+print()
 print(
-    "Created:",
-    OUT
+    "======================================"
 )
-
 print(
-    "Size:",
-    CANVAS_W,
-    "x",
-    CANVAS_H
+    " ASCII PORTRAIT CREATED"
 )
-
 print(
-    "ASCII grid:",
-    COLS,
-    "x",
-    ROWS
+    "======================================"
 )
-
+print()
 print(
-    "Animation:",
-    "~6 seconds"
+    f"Source    : {SRC}"
 )
-
+print(
+    f"Output    : {OUT}"
+)
+print(
+    f"Grid      : {COLS} x {ROWS}"
+)
+print(
+    f"Canvas    : {CANVAS_W} x {CANVAS_H}"
+)
+print(
+    f"Animation : {TOTAL_REVEAL_TIME}s"
+)
+print(
+    f"Static    : {STATIC}"
+)
 print()
