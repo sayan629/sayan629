@@ -2,25 +2,14 @@ from pathlib import Path
 
 from PIL import Image, ImageOps, ImageEnhance
 
-
-# --------------------------------------------------
-# Paths
-# --------------------------------------------------
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 INPUT_FILE = BASE_DIR / "data" / "source-prepped.png"
 OUTPUT_FILE = BASE_DIR / "avi-ascii.svg"
 
-
-# --------------------------------------------------
-# ASCII configuration
-# --------------------------------------------------
-
-# Bright -> dark
-# Very sparse first, very dense last.
 RAMP = " .:-=+*#%@"
 
+# KEEPING YOUR EXISTING SIZE
 TARGET_WIDTH = 110
 
 CHAR_WIDTH = 7
@@ -28,31 +17,18 @@ CHAR_HEIGHT = 14
 
 FONT_SIZE = 10
 
-# Strict monochrome
-TEXT_COLOR = "#111111"
+# Dark terminal theme
+TEXT_COLOR = "#e6edf3"
+BACKGROUND = "#0d1117"
 
-# Pure white background
-BACKGROUND = "#ffffff"
-
-
-# --------------------------------------------------
-# Load image
-# --------------------------------------------------
 
 if not INPUT_FILE.exists():
     raise FileNotFoundError(
         f"Input image not found: {INPUT_FILE}"
     )
 
+
 image = Image.open(INPUT_FILE).convert("L")
-
-
-# --------------------------------------------------
-# Increase contrast
-# --------------------------------------------------
-
-# Make the difference between face highlights
-# and shadows much stronger.
 
 image = ImageOps.autocontrast(
     image,
@@ -60,13 +36,8 @@ image = ImageOps.autocontrast(
 )
 
 contrast = ImageEnhance.Contrast(image)
-
 image = contrast.enhance(2.2)
 
-
-# --------------------------------------------------
-# Resize while preserving aspect ratio
-# --------------------------------------------------
 
 width, height = image.size
 
@@ -82,37 +53,27 @@ target_height = max(
     )
 )
 
+
 image = image.resize(
     (TARGET_WIDTH, target_height),
     Image.Resampling.LANCZOS
 )
 
 
-# --------------------------------------------------
-# Slight threshold enhancement
-# --------------------------------------------------
-
-# Keep white areas very clean.
 pixels = list(image.getdata())
 
 processed_pixels = []
 
 for value in pixels:
 
-    # Push very bright pixels toward pure white.
     if value > 225:
         value = 255
 
-    # Push very dark pixels toward black.
     elif value < 35:
         value = 0
 
     processed_pixels.append(value)
 
-
-# --------------------------------------------------
-# Convert pixels to ASCII
-# --------------------------------------------------
 
 rows = []
 
@@ -126,58 +87,54 @@ for y in range(target_height):
             y * TARGET_WIDTH + x
         ]
 
-        # White -> sparse
-        # Black -> dense
-
         index = int(
             (255 - brightness)
             / 255
             * (len(RAMP) - 1)
         )
 
-        row.append(RAMP[index])
+        row.append(
+            RAMP[index]
+        )
 
-    rows.append("".join(row))
+    rows.append(
+        "".join(row)
+    )
 
-
-# --------------------------------------------------
-# SVG dimensions
-# --------------------------------------------------
 
 svg_width = TARGET_WIDTH * CHAR_WIDTH
 svg_height = target_height * CHAR_HEIGHT
 
 
-# --------------------------------------------------
-# SVG
-# --------------------------------------------------
-
 svg = []
 
 svg.append(
-    f'<svg xmlns="http://www.w3.org/2000/svg" '
-    f'width="{svg_width}" '
-    f'height="{svg_height}" '
-    f'viewBox="0 0 {svg_width} {svg_height}">'
+    f'''<svg xmlns="http://www.w3.org/2000/svg"
+    width="{svg_width}"
+    height="{svg_height}"
+    viewBox="0 0 {svg_width} {svg_height}">
+'''
 )
 
 
-# --------------------------------------------------
-# Animation CSS
-# --------------------------------------------------
+# ---------------------------------------
+# SLOW TERMINAL ANIMATION
+# ---------------------------------------
 
-svg.append("""
+svg.append(
+    """
 <style>
 
 .ascii-row {
 
     opacity: 0;
 
-    transform: translateX(-18px);
+    transform:
+        translateX(-10px);
 
     animation:
         asciiReveal
-        0.38s
+        0.75s
         cubic-bezier(.2,.8,.2,1)
         forwards;
 }
@@ -190,8 +147,7 @@ svg.append("""
         opacity: 0;
 
         transform:
-            translateX(-18px);
-
+            translateX(-10px);
     }
 
     100% {
@@ -200,36 +156,42 @@ svg.append("""
 
         transform:
             translateX(0);
-
     }
 
 }
 
 </style>
-""")
-
-
-# --------------------------------------------------
-# White background
-# --------------------------------------------------
-
-svg.append(
-    f'<rect '
-    f'width="100%" '
-    f'height="100%" '
-    f'fill="{BACKGROUND}"/>'
+"""
 )
 
 
-# --------------------------------------------------
-# ASCII rows
-# --------------------------------------------------
+# ---------------------------------------
+# DARK BACKGROUND
+# ---------------------------------------
+
+svg.append(
+    f'''
+<rect
+    width="100%"
+    height="100%"
+    fill="{BACKGROUND}"
+/>
+'''
+)
+
+
+# ---------------------------------------
+# ASCII ROWS
+# ---------------------------------------
 
 for row_index, row in enumerate(rows):
 
-    y = (row_index + 1) * CHAR_HEIGHT
+    y = (
+        row_index + 1
+    ) * CHAR_HEIGHT
 
-    delay = row_index * 0.025
+    # SLOWER ROW-BY-ROW STAGGER
+    delay = row_index * 0.055
 
     escaped = (
         row
@@ -239,33 +201,24 @@ for row_index, row in enumerate(rows):
     )
 
     svg.append(
-        f'<text '
-        f'class="ascii-row" '
-        f'x="0" '
-        f'y="{y}" '
-        f'font-family="Consolas, '
-        f'Monaco, monospace" '
-        f'font-size="{FONT_SIZE}px" '
-        f'font-weight="600" '
-        f'fill="{TEXT_COLOR}" '
-        f'style="'
-        f'animation-delay:{delay:.3f}s;'
-        f'white-space:pre;">'
-        f'{escaped}'
-        f'</text>'
+        f'''
+<text
+    class="ascii-row"
+    x="0"
+    y="{y}"
+    font-family="Consolas, Monaco, monospace"
+    font-size="{FONT_SIZE}px"
+    font-weight="600"
+    fill="{TEXT_COLOR}"
+    style="animation-delay:{delay:.3f}s;
+           white-space:pre;">
+    {escaped}</text>
+'''
     )
 
 
-# --------------------------------------------------
-# Close SVG
-# --------------------------------------------------
-
 svg.append("</svg>")
 
-
-# --------------------------------------------------
-# Save
-# --------------------------------------------------
 
 OUTPUT_FILE.write_text(
     "\n".join(svg),
@@ -275,13 +228,23 @@ OUTPUT_FILE.write_text(
 
 print()
 print("======================================")
-print(" MONOCHROME ASCII SVG CREATED")
+print(" DARK ASCII SVG CREATED")
 print("======================================")
 print()
+
 print(f"Input : {INPUT_FILE}")
 print(f"Output: {OUTPUT_FILE}")
+
 print()
+
 print(f"Grid  : {TARGET_WIDTH} x {target_height}")
-print("Color : Monochrome")
-print("Mode  : High Contrast")
-print("Animation: Row-by-row")
+
+print("Theme : Dark Terminal")
+
+print("Text  : #e6edf3")
+
+print("Background : #0d1117")
+
+print("Animation : Slow row-by-row")
+
+print()
