@@ -1,12 +1,20 @@
 {
   "username": "sayan629",
   "source": "https://github.com/users/sayan629/contributions",
+<<<<<<< HEAD
   "generated_at": "2026-11-05T17:30:01Z",
+=======
+  "generated_at": "2026-11-05T17:39:51Z",
+>>>>>>> 78b830e (Readme Update..)
   "range": {
     "start": "2025-11-02",
     "end": "2026-11-05"
   },
+<<<<<<< HEAD
   "total_contributions": 2495,
+=======
+  "total_contributions": 2496,
+>>>>>>> 78b830e (Readme Update..)
   "active_days": 247,
   "avg_per_active_day": 10.1,
   "current_streak": {
@@ -74,7 +82,11 @@
     },
     {
       "month": "2026-11",
+<<<<<<< HEAD
       "total": 29
+=======
+      "total": 30
+>>>>>>> 78b830e (Readme Update..)
     }
   ],
   "days": [
@@ -1920,7 +1932,11 @@
     },
     {
       "date": "2026-11-05",
+<<<<<<< HEAD
       "count": 6,
+=======
+      "count": 7,
+>>>>>>> 78b830e (Readme Update..)
       "level": 1
     }
   ]

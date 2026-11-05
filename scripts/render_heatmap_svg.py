@@ -355,7 +355,7 @@ def render(data):
         f'fill="{MUTED}" '
         f'font-size="12" '
         f'text-anchor="middle">'
-        f'sayan@github: ~/contributions --graph'
+        f'sayan@github: ~$ ./contributions.sh'
         f'</text>'
     )
 
