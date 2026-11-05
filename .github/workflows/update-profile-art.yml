@@ -33,8 +33,14 @@ jobs:
       - name: Render heatmap
         run: python scripts/render_heatmap_svg.py
 
-      - name: Commit updated heatmap
+      - name: Render stats
+        run: python scripts/render_stats_svg.py
+
+      - name: Render streak
+        run: python scripts/generate_streak_svg.py
+
+      - name: Commit updated art and stats
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: refresh contribution graph [skip ci]"
-          file_pattern: "data/contributions.json contrib-heatmap.svg"
+          commit_message: "chore: refresh contribution graph and stats [skip ci]"
+          file_pattern: "data/contributions.json contrib-heatmap.svg stats.svg streak.svg"
